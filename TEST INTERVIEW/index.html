@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Travels</title>
+        <link href="./assets/images/icon.png" rel="icon" type="image/png">
+        <link rel="stylesheet" href="./vendor/notyf/notyf.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    </head>
+
+    <body>
+
+        <header class="container mb-5">
+            <nav class="navbar">
+                <div class="container-fluid">
+                  <span class="navbar-brand mb-0 h1">Travels</span>
+                </div>
+            </nav>
+        </header>
+
+        <main class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <div class="d-grid gap-2">
+                        <button
+                            class="btn text-bg-dark p-3" 
+                            type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#Register_travels" 
+                            aria-expanded="false" 
+                            aria-controls="Register_travels">
+                                Register Travel
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="d-grid gap-2">
+                        <button
+                            class="btn text-bg-dark p-3" 
+                            type="button" 
+                            data-bs-toggle="collapse" 
+                            data-bs-target="#Modify_travels" 
+                            aria-expanded="false" 
+                            aria-controls="Modify_travels">
+                                Modify Travel
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 mb-5">
+                <div class="col-12 mb-4">
+                    <div class="collapse multi-collapse" id="Register_travels">
+                        <div class="card card-body text-bg-dark p-3">
+                            <h4 class="mt-4 mb-4">Please add the following information correctly</h4>
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="Travel_Start" class="form-label">Travel Start</label>
+                                        <input type="text" class="form-control" id="Travel_Start" maxlength="500">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="Travel_Destination" class="form-label">Travel Destination</label>
+                                        <input type="text" class="form-control" id="Travel_Destination" maxlength="500">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="Start_Date" class="form-label">Start Date</label>
+                                        <input type="date" class="form-control" id="Start_Date">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="Expiration_Date" class="form-label">Expiration Date</label>
+                                        <input type="date" class="form-control" id="Expiration_Date">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <label for="Passenger_Name" class="form-label">Passenger's name</label>
+                                        <input type="text" class="form-control" id="Passenger_Name" maxlength="500">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2 col-6 mx-auto mt-3 mb-3">
+                                <button id="btn_Save_Travel" type="button" class="btn btn-light">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="collapse multi-collapse" id="Modify_travels">
+                        <div class="card card-body text-bg-dark p-3">
+                            <h4 class="mt-4 mb-4">Please add Folio correctly</h4>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="Folio" class="form-label">Enter Folio</label>
+                                        <input type="text" class="form-control" id="Folio" maxlength="500">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="Modify_Travel_Start" class="form-label">Travel Start</label>
+                                        <input type="text" class="form-control" id="Modify_Travel_Start" maxlength="500">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="mb-3">
+                                        <label for="Modify_Travel_Destination" class="form-label">Travel Destination</label>
+                                        <input type="text" class="form-control" id="Modify_Travel_Destination" maxlength="500">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6"">
+                                    <div class="mb-3">
+                                        <label for="Modify_Start_Date" class="form-label">Start Date</label>
+                                        <input type="date" class="form-control" id="Modify_Start_Date">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6"">
+                                    <div class="mb-3">
+                                        <label for="Modify_Expiration_Date" class="form-label">Expiration Date</label>
+                                        <input type="date" class="form-control" id="Modify_Expiration_Date">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6"">
+                                    <div class="mb-3">
+                                        <label for="Modify_Passenger_Name" class="form-label">Passenger's name</label>
+                                        <input type="text" class="form-control" id="Modify_Passenger_Name" maxlength="500">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2 col-6 mx-auto mt-3 mb-3">
+                                <button id="btn_Modify_Travel" type="button" class="btn btn-light">Modify</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./vendor/notyf/notyf.min.js"></script>
+    <script src="./vendor/sweetalert2/sweetalert.js"></script>
+    <script src="./assets/scripts/js/Support Functions/index.js"></script>
+    <script src="./assets/scripts/js/index.js"></script>
+
+</html>
